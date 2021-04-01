@@ -1,0 +1,1939 @@
+.mask_div
+{
+-moz-user-select: none;
+-khtml-user-select: none;
+user-select: none;
+}
+
+
+
+/*************************************************
+                 配置主页面 begin
+*************************************************/
+/*body 
+{ 
+    width:100%;
+	height:100%;
+	overflow:hidden; 
+}
+.container 
+{ 
+    width:938px; 
+}*/
+/*
+.box
+{
+            background: #f00;
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            opacity: 0.5;
+            cursor: move;
+}
+*/
+
+
+/*
+.buttonmouseout {
+    background: rgba(0, 0, 0, 0) url("../images/playback/buttonbg.gif") repeat scroll 0 0;
+    cursor: pointer;
+    float: left;
+    height: 28px;
+    margin: 7px 0 0 2px;
+    text-align: center;
+    width: 32px;
+}
+
+
+
+
+.capturedisable {
+    background: rgba(0, 0, 0, 0) url("../images/playback/captureDis.gif") repeat scroll 0 0;
+    display: inline-block;
+    height: 18px;
+    margin-top: 4px;
+    width: 23px;
+}
+
+*/
+
+.capturebutton
+{
+    background: rgba(0, 0, 0, 0) url("../images/playback/buttonbg.gif") repeat scroll 0 0;
+    cursor: pointer;
+    float: right;
+    height: 28px;
+    margin: 0 8px;
+    text-align: center;
+    width: 32px;
+}
+
+.capturepic
+{
+    background: rgba(0, 0, 0, 0) url("../images/playback/captureDis.gif") repeat scroll 0 0;
+    display: inline-block;
+    height: 18px;
+    margin-top: 4px;
+    width: 23px;
+}
+
+.list_up
+{
+    height: 32px;
+    background: url(../images/config/listdown.png) no-repeat;
+}
+
+.list_down
+{
+    height: 32px;
+    background: url(../images/config/listup.png) no-repeat;
+}
+
+
+.contentleft
+{
+	float:left;
+	width:201px;
+	margin:18px 0px 18px 18px;
+	overflow:auto;
+}
+.contentright
+{
+	float:right;
+	width:732px;
+	margin:18px 18px 18px 0px;
+}
+.editcontent
+{
+	width:732px;
+    height: 600px;
+}
+.iframecontent
+{
+    width:732px;
+    height: 700px;
+
+}
+
+.footer
+{
+	height:40px;
+	text-align:right;
+	padding:10px 0 0 0;
+}
+/*.help
+{
+    float:right;
+	height:20px;
+	width:20px;
+	line-height:20px;
+	background:url(../images/main/help.gif) no-repeat left;
+	cursor:pointer;
+}*/
+/*************************************************
+                 配置主页面 end
+*************************************************/
+/*************************************************
+                 配置子页面公共部分 begin
+*************************************************/
+.savebtn /*保存按钮*/
+{
+	display:inline-block;
+	width:88px;
+	height:24px;
+	_height:27px;
+	vertical-align:middle;
+	border:0px;
+	color:#000000;
+	background:url(../images/config/Button.gif) no-repeat;
+	cursor:pointer;
+}
+.formtips 
+{
+    color:#457735;
+}
+
+.skybluefont /*淡蓝色字体*/
+{
+    color: #50A3DF;
+}
+/*滑动条样式 begin*/
+.imageslider1 
+{ 
+	margin:8px 0 0 0;
+    height:20px; 
+    width:90%; 
+    background:url(../images/config/scrollvol.gif) repeat-x; 
+}
+.imageBar2    
+{   
+	margin:6px 0 0 0;
+    height:13px; 
+    width:10px; 
+    background:url(../images/config/Scrollvol1.gif) no-repeat;	
+}
+.boxBar
+{
+	margin:3px 0 0 170px;
+	height:14px; 
+	width:22px;
+    font-size:12px;
+	text-align:center;
+}
+.boxBar1
+{
+	margin:3px 0 0 200px;
+	height:14px; 
+	width:22px;
+	text-align:center;
+}
+.boxBar2
+{
+    margin:3px 0 0 102px;
+    height:14px;
+    width:22px;
+    text-align:center;
+}
+.boxBar3
+{
+    margin:3px 0 0 87px;
+    height:14px;
+    width:22px;
+    text-align:center;
+}
+/*滑动条样式 end*/
+.ptzlinkedit
+{ 
+    width:100px;
+	font-size:12px;
+	vertical-align:middle;
+}
+.pluginLink
+{
+	display:inline-block;
+	width:325px;
+	word-wrap:break-word;
+	color: #457735;
+	font-size:12px;
+	text-decoration:underline;
+	cursor:pointer;
+}
+.pluginLinkSel
+{
+	display:inline-block;
+	width:325px;
+	word-wrap:break-word;	
+	color: #0FF;
+	font-size:12px;
+	text-decoration:underline;	
+	cursor:pointer;
+}
+.verticalmiddle
+{
+	vertical-align:middle;
+}
+.panewidth /*tab页内容的宽度*/
+{
+    width:690px;
+    height: 500px;
+}
+.needmutichan
+{
+    height:26px;
+    line-height:26px;
+    padding-left:10px;
+    /*margin-bottom:12px;*/
+    /*background:#eaeaea;*/
+    /*font-weight:bold;*/
+}
+.mainparams
+{
+	height:26px;
+	line-height:26px;
+    padding-left:10px;
+	margin-bottom:2px;
+    background:#eaeaea;
+    font-weight:bold;
+}
+.subparamswhite
+{
+	height:26px;
+	padding-left:10px;
+	margin-bottom:2px;
+	line-height:26px;
+    background:#ffffff;
+}
+.subparamsgray
+{
+	height:26px;
+	padding-left:10px;
+	margin-bottom:2px;
+	line-height:26px;
+    background:#f5f5f5;
+}
+.firstspan
+{
+    display:inline-block;
+	width:150px;    
+}
+
+.systemFirstspan
+{
+    display:inline-block;
+    width:95px;
+}
+
+.checkbox
+{
+    vertical-align:text-bottom;
+    cursor:pointer;
+}
+
+.nmbutton {
+    width:85px;
+    height:24px;
+    line-height:20px; /*IE*/
+    vertical-align:middle;
+    cursor:pointer;
+}
+.button
+{
+    width:70px;
+	height:24px;
+	margin-left:15px;
+	line-height:20px; /*IE*/
+	vertical-align:middle;
+    cursor:pointer;
+}
+.button::-moz-focus-inner
+{ /*Firefox*/
+	border:none;
+}
+.wbutton
+{
+	height:24px;
+	line-height:20px;
+    padding-left:10px;
+	padding-right:10px;
+	margin-left:5px;
+	vertical-align:middle;
+    cursor:pointer;
+	max-width:315px;
+}
+.wbutton::-moz-focus-inner
+{ /*Firefox*/
+	border:none;
+}
+.radio
+{
+    vertical-align:text-bottom;
+    cursor:pointer;
+}
+.paramplugin
+{
+    /*
+    width:360px;
+    height:288px;
+    */
+    width:360px;
+    height:260px;
+	text-align:center;
+	display:table-cell; 
+    vertical-align:middle;
+    /*
+    background-color:#343434; 
+    background-color:transparent;
+    filter:alpha(opacity=0); 
+    */
+    
+    background:#fff; 
+    filter:alpha(opacity:50); 
+    opacity:0.3;  
+    -moz-opacity:0.3;
+    -khtml-opacity: 0.3;
+    padding: 0px 0px 0px 0px;
+}
+
+.param_vlcplugin
+{
+    /*
+    width:360px;
+    height:288px;
+    */
+    width: 360px;
+    height: 260px;
+	text-align:center;
+	display:table-cell; 
+    vertical-align:middle;
+    background-color:#fff;  
+    z-index:9999;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.noticemsg
+{
+    text-align: center;
+    color: red;font-size: 10px;
+}
+
+
+#vlc_frame
+{
+    padding: 0px 0px 0px 0px;
+}
+
+.margintop26
+{
+    margin-top:26px;
+}
+.margintop13
+{
+    margin-top:13px;
+}
+
+.marginbottom12
+{
+    margin-bottom: 12px;
+}
+
+.width54
+{
+    width:54px;
+}
+.width60
+{
+    width:60px;
+}
+.width65
+{
+    width:65px;
+}
+.width70
+{
+    width:70px;
+}
+.width75
+{
+    width:75px;
+}
+.width85
+{
+    width:85px;
+}
+.width92
+{
+    width:92px;
+}
+.width95
+{
+    width:95px;
+}
+.width100
+{
+    width:100px;
+}
+.width125
+{
+    width:125px;
+}
+.width128
+{
+    width:128px;
+}
+.width156
+{
+    width:156px;
+}
+.width268
+{
+    width:268px;
+}
+
+.width328
+{
+    width:328px;
+}
+
+.width300
+{
+    width:300px;
+}
+.width437
+{
+    width:437px;
+}
+.width505
+{
+    width:505px;
+}
+.widthpersent100
+{
+    width:100%;
+}
+.height25
+{
+    height:25px;
+}
+.height27
+{
+    height:27px;
+}
+.lineheight25
+{
+    line-height:25px;
+}
+.ie6bug1 /*ie6下firstspan不对齐*/
+{
+    _width:147px;
+}
+.borderc0c0c0
+{
+    border:1px solid #c0c0c0;
+}
+.borderd7d7d7
+{
+    border:1px solid #d7d7d7;
+}
+.bgeaeaea
+{
+    background:#eaeaea;
+}
+.bgffffff
+{
+    background:#ffffff;
+}
+.inlineblock
+{
+    display:inline-block;
+}
+/*************************************************
+                 本地配置 begin
+*************************************************/
+.localsecondspan
+{
+    display:inline-block;
+	width:130px;
+	white-space:nowrap;
+}
+.pathsecondspan
+{
+    display:inline-block;
+	width:430px;   
+}
+.paththirdspan
+{
+    display:inline-block;
+	width:80px;   
+}
+/*************************************************
+                 本地配置 end
+*************************************************/
+/*************************************************
+                 系统子页面 begin
+*************************************************/
+.deviceinfotable
+{
+    width:690px;
+    height:25px;
+    margin:10px 0 0 0;
+    line-height:25px;
+    over-flow:hidden;
+    border-collapse:collapse;
+}
+.deviceinfotd
+{
+	padding-left:10px;
+	border:1px solid #e8e6d7;
+}
+.rowheader
+{
+    width:150px;
+    background:#f8f8f8;
+}
+.upexplains
+{
+	display:inline-block;
+	vertical-align:top;
+	font-weight:bold;
+	width:555px;
+	word-wrap:break-word;
+}
+.upgradelabel
+{
+	_display:inline-block;
+	_vertical-align:top;
+	font-weight:bold;
+}
+.timetext
+{
+    width:200px;
+    vertical-align:middle\9;
+}
+.maintaintext
+{
+    width:330px;
+    margin-left:5px;
+	vertical-align:middle;
+    cursor:text;
+} 
+/*************************************************
+                 系统子页面 end
+*************************************************/
+/*************************************************
+                 网络子页面 begin
+*************************************************/
+/*******WIFI begin*******/
+.wifihead
+{
+	background-color:#F5F5F5;
+	height:30px;
+	line-height:30px;
+	vertical-align:central;
+	padding-left:10px;
+}
+#dvWifiList
+{
+	border:1px solid #E2E0D3;
+	height:135px;
+	overflow:auto;
+}
+.wifilisteven
+{
+	border-bottom:1px solid #E2E0D3;
+	height:26px;
+	line-height:26px;
+	cursor:pointer;	
+	background-color:#F8F8F8;
+}
+.wifilistodd
+{
+	border-bottom:1px solid #E2E0D3;
+	height:26px;
+	line-height:26px;
+	cursor:pointer;	
+	background-color:#FFFFFF;
+}
+.wifilistenter
+{
+	border-bottom:1px solid #E2E0D3;
+	height:26px;
+	line-height:26px;
+	cursor:pointer;		
+	background-color:#FBFBC2;
+}
+.wifilistselect
+{
+	border-bottom:1px solid #E2E0D3;
+	height:26px;
+	line-height:26px;
+	cursor:pointer;		
+	background-color:#C0C0C0;
+	cursor:default;
+}
+.wifilisttitle
+{
+	background-color:#EAEAEA;
+	height:24px;
+	line-height:24px;
+	vertical-align:central;
+}
+.wifiline
+{
+	float:left;
+	text-align:left;
+	padding-left:2px;
+	border-right:1px solid #EEEBDF;
+	overflow:hidden;
+	white-space:nowrap;
+}
+#dvRouteAdList
+{
+	height:200px;
+	overflow:auto;
+	border:1px solid #E2E0D3;
+}
+#dvRouteAdList div
+{
+	border:1px solid #E2E0D3;
+	border-width:0px 1px 1px 1px;
+	height:24px;
+	cursor:pointer;
+}
+#dvRouteAdList span
+{
+	height:24px;
+	/*padding-top:4px;*/
+	line-height:24px;
+	vertical-align:central;
+	float:left;
+}
+
+#dvRouteAdList div.even
+{
+	background-color:#F8F8F8;
+}
+#dvRouteAdList div.enter
+{
+	background-color:#FBFBC2;
+}
+#dvRouteAdList div.select
+{
+	background-color:#C0C0C0;
+}
+#dvRouteAdListWnd span
+{
+	display:inline-block;
+}
+.routeadListfoot
+{
+	padding-right:10px;
+	height:32px;
+	text-align:right;
+	line-height:32px;
+    background:#eaeaea; 
+}
+/*******WIFI end*******/
+.netradio
+{
+    vertical-align:text-bottom;
+    cursor:pointer;	
+	margin-right:2px;
+	margin-left:5px;
+}
+/*******UPnP start*******/
+.upnpfirst
+{
+	width:74px;
+	text-align:left;
+	border-right:1px solid #EFEEE5;
+	padding-left:5px;
+}
+.upnpsecond
+{
+	width:124px;
+	text-align:left;
+	border-right:1px solid #EFEEE5;
+	padding-left:5px;
+}
+.upnpthird
+{
+	width:124px;
+	text-align:left;
+	border-right:1px solid #EFEEE5;
+	padding-left:5px;
+	cursor:pointer;
+}
+.upnpfouth
+{
+	width:144px;
+	text-align:left;
+	border-right:1px solid #EFEEE5;
+	padding-left:5px;
+}
+.upnpfive
+{
+	width:114px;
+	text-align:left;
+	border-right:1px solid #EFEEE5;
+	padding-left:5px;
+}
+.upnpsix
+{
+	padding-left:5px;
+}
+#divPortsMapList div
+{
+	border:1px solid #E2E0D3;
+	border-width:0px 1px 1px 1px;
+	height:24px;
+}
+#divPortsMapList span
+{
+	height:24px;
+	/*padding-top:4px;*/
+	line-height:24px;
+	vertical-align:central;
+	float:left;
+}
+
+#divPortsMapList div.even
+{
+	background-color:#F8F8F8;
+}
+#divPortsMapList div.enter
+{
+	background-color:#FBFBC2;
+}
+#divPortsMapList div.select
+{
+	background-color:#C0C0C0;
+}
+/*******UPnP end*******/
+/*******3G start*******/
+#dvWhiteList span
+{
+	padding-left:5px;
+	height:25px;
+	line-height:25px;
+	border-right:1px solid #d7d7d7;
+	float:left;
+}
+#dvSMSList span
+{
+	padding-left:5px;
+	height:25px;
+	line-height:25px;
+	border-right:1px solid #d7d7d7;
+	float:left;
+}
+.listheader
+{
+	height:25px;
+	overflow:hidden;
+	background:#eaeaea;
+	border:1px solid #E2E0D3;
+}
+.listcontent
+{
+	height:150px;
+	overflow:auto;
+}
+.listelement
+{
+	height:25px;
+	border:1px solid #E2E0D3;
+	border-width:0px 1px 1px 1px;
+}
+.listcontent div.even
+{
+	background-color:#F8F8F8;
+}
+.listcontent div.enter
+{
+	background-color:#FBFBC2;
+	cursor:pointer;
+}
+.listcontent div.select
+{
+	background-color:#C0C0C0;
+}
+#dvDialStatusInfo div
+{
+	height:25px;
+    line-height:25px;
+    over-flow:hidden;
+	border:1px solid #e8e6d7;
+	border-width:0px 1px 1px 1px;
+}
+#dvDialStatusInfo .firstdiv
+{
+	border-width:1px 1px 1px 1px;
+}
+#dvDialStatusInfo span
+{
+    height:25px;
+    line-height:25px;
+    over-flow:hidden;
+	padding-left:10px;
+	float:left;
+}
+#dvDialStatusInfo .firstspan
+{
+	width:150px;
+    background:#f8f8f8;
+	border-right:1px solid #e8e6d7;
+}
+.whitelistwnd
+{
+    margin:0 auto;
+	width: 570px;
+	border:1px solid #959595;
+	background:#ffffff;
+}
+
+.whitelistphoneTip {
+	display:inline-block;
+	width:150px;
+	margin-left: 5px;
+}
+
+.whitelisthponeInput {
+	width: 193px;
+	font-size: 12px;
+}
+
+.smscontentwnd
+{
+	margin:0 auto;
+	width: 400px;
+	border:1px solid #959595;
+	background:#ffffff;
+}
+.smscontent
+{
+	height:80px;
+	padding-left:10px;
+	margin-bottom:2px;
+	line-height:80px;
+    background:#ffffff;
+}
+.txtcontent
+{
+	width:200px;
+	height:80px;
+}
+
+#dvAlarmInEncode
+{
+    width: 360px;
+    padding-top: 10px;
+}
+
+#dvAlarmInList div
+{
+    border: 1px solid #e2e0d3;
+    height: 24px;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+#dvAlarmInList div.select
+{
+    border: 1px solid #e2e0d3;
+    height: 24px;
+    line-height: 24px;
+    cursor: pointer;
+    background: #fbfbc2;
+}
+
+.SIPAlarmIDfirstspan
+{
+    float: left;
+    width:150px;
+    border-right: 1px solid #e2e0d3;
+    text-align: center;
+    height: 24px;
+}
+
+.SIPAlarmIDsecondspan
+{
+    float: left;
+    width: 200px;
+    height: 24px;
+    text-align: center;
+}
+
+#dvSIPEditText input
+{
+    text-align: center;
+}
+
+#dvSIPEditText
+{
+    position: absolute;
+    display: none;
+}
+/*******3G end*******/
+/*******HTTPS start********/
+#dialogCertificateInfo {
+    margin:0 auto;
+    width:550px;
+    border:1px solid #959595;
+    background:#ffffff;
+    display:none;
+}
+/*******HTTPS end********/
+/*************************************************
+                 网络子页面 end
+*************************************************/
+/*************************************************
+                 图像子页面 begin
+*************************************************/
+.imageleft
+{
+    float:left;
+	width:360px;
+}
+.imageright
+{
+    float:left;
+	margin-left:8px;
+	width:318px;
+}
+.imagefirstspan
+{
+    float:left;
+	width:130px;
+	padding-left:10px;
+	white-space:nowrap;
+}
+.imagesecondspan
+{
+    float:right;
+	margin-right:10px;
+	width:168px;   
+}
+.imagesecondspanleft {
+    float:left;
+    margin-right:10px;
+    width:168px;
+}
+.imgsubparamswhite
+{
+	height:30px;
+	line-height:30px;
+	margin-bottom:4px;
+    background:#ffffff;
+}
+.imgselectwidth
+{
+    width:168px;
+	font-size:12px;
+}
+
+.colorselectwidth
+{
+    width:80px;
+	font-size:12px;
+}
+
+.imgselectwidth68
+{
+    width:68px;
+    font-size:12px;
+}
+.imgbutton
+{
+	width:70px;
+	height:22px;
+	margin-left:5px;
+	line-height:18px; /*IE*/
+	vertical-align:middle;
+    cursor:pointer;
+}
+.imgbutton::-moz-focus-inner
+{ /*Firefox*/
+	border:none;
+}
+.videoinputwidth
+{
+    width:164px;
+}
+.videoinputwidth80
+{
+    width:80px;
+}
+.videoinputwidth60
+{
+    width:60px;
+}
+
+.imagetype
+{
+	border-bottom:#D9D9D9 solid 1px;
+	padding-bottom:2px;
+}
+.imagetypetitle
+{
+	padding:8px 0px 10px 10px;
+	text-align:left;
+	font-weight:bold;
+	color:#383838;
+	font-size:13px;
+	cursor:pointer;
+}
+.imageexpanded
+{
+	background:url(../images/menu/expanded.gif) no-repeat 0px 11px;
+}
+.imagecollapsed
+{
+	background:url(../images/menu/collapsed.gif) no-repeat 0px 11px;
+}
+.dpctoolbar
+{
+    height:60px;
+    width:352px;
+    background:url(../images/playback/toolbar.gif) repeat-x;
+}
+.dpcbadbtn
+{
+    float:left;
+    width:32px;
+    height:28px;
+    background:url(../images/config/bad.gif);
+    margin:10px 0 0 100px;
+    cursor: pointer;
+}
+.dpcbadbackbtn
+{
+    float:left;
+    width:32px;
+    height:28px;
+    background:url(../images/config/bad_back.gif);
+    margin:10px 0 0 20px;
+    cursor: pointer;
+}
+.dpcleftbtn
+{
+    float: left;
+    background:url(../images/ptz/nor/left.gif);
+    width:16px;
+    height:16px;
+    margin: 12px 0 0 20px;
+    cursor: pointer;
+}
+.dpcupbtn
+{
+    background:url(../images/ptz/nor/up.gif);
+    width:16px;
+    height:16px;
+    cursor: pointer;
+}
+.dpcrightbtn
+{
+    float: left;
+    background:url(../images/ptz/nor/right.gif);
+    width:16px;
+    height:16px;
+    margin: 11px 0 0 0;
+    cursor: pointer;
+}
+.dpcdownbtn
+{
+    background:url(../images/ptz/nor/down.gif);
+    width:16px;
+    height:16px;
+    margin: 10px 0 0 0;
+    cursor: pointer;
+}
+/*************************************************
+                 图像子页面 end
+*************************************************/
+/*************************************************
+                 安全子页面 begin
+*************************************************/
+.usercontent
+{
+    margin:0 auto;
+	width: 570px;
+	border:1px solid #959595;
+	background:#ffffff;
+}
+.windowtile
+{
+	height:26px;
+	line-height:26px;
+    padding-left:10px;
+    background:#d8d8d8;
+    font-weight:bold;
+}
+.usertable
+{
+    border-collapse:collapse; 
+	width:550px; 
+	margin:10px 0 0 10px;
+}
+.permissiontitle
+{
+    padding-left:5px;
+	background:#eaeaea;
+}
+.userfoot
+{
+	margin-top:10px;
+	padding-right:10px;
+	height:32px;
+	text-align:right;
+	line-height:32px;
+    background:#eaeaea; 
+}
+.usercheckbox {
+    vertical-align:text-bottom;
+    margin-left:5px;
+    cursor:pointer;
+}
+#divPswStrength
+{
+	padding: 0 0 0 165px;
+	margin: -5px 0 5px 0;
+	width: 197px;
+  	word-wrap: break-word;
+}
+#divPswStrength div
+{
+	width: 200px;
+	color: #999999;
+}
+#divPswStrength .validate
+{
+	white-space:nowrap;
+	color: #000000;
+}
+#userPwdInput
+{
+	width: 218px;
+	display:inline-block;
+	background-position: right;
+}
+.inputRight
+{
+	background:url(../images/config/smile.gif) no-repeat;
+}
+.inputWrong input
+{
+	border: 1px solid #ff0000;
+}
+.inputWrong
+{
+	background:url(../images/config/error.gif) no-repeat;
+}
+.userstrength
+{
+    display: inline-block;
+	width: 64px;
+	height: 4px;
+	vertical-align: middle;
+	background: #CCCCCC;
+}
+
+.ipcontent
+{
+	margin:0 auto;
+	width: 470px;
+	border:1px solid #959595;
+	background:#ffffff;
+}
+.ipfilterhead
+{
+	height:24px;
+	padding-top:3px;
+	padding-left:10px;
+	margin-top:10px;
+}
+.listHead
+{
+	background-color:#EAEAEA;
+	height:24px;
+	line-height:24px;
+	vertical-align:central;
+}
+.first
+{
+	width:104px;
+	text-align:left;
+	border-right:1px solid #EFEEE5;
+	padding-left:5px;
+}
+.second
+{
+	width:284px;
+	text-align:left;
+	border-right:1px solid #EFEEE5;
+	padding-left:5px;
+}
+#divIPAddressFilterList
+{
+	height:200px;
+	overflow:auto;
+	border:1px solid #E2E0D3;
+}
+#divIPAddressFilterList div
+{
+	border:1px solid #E2E0D3;
+	border-width:0px 1px 1px 1px;
+	height:24px;
+	cursor:pointer;
+}
+#divIPAddressFilterList span
+{
+	height:24px;
+	/*padding-top:4px;*/
+	line-height:24px;
+	vertical-align:central;
+	float:left;
+}
+
+#divIPAddressFilterList div.even
+{
+	background-color:#F8F8F8;
+}
+#divIPAddressFilterList div.enter
+{
+	background-color:#FBFBC2;
+}
+#divIPAddressFilterList div.select
+{
+	background-color:#C0C0C0;
+}
+/*************************************************
+                 安全子页面 end
+*************************************************/
+/*************************************************
+                 事件子页面 begin
+*************************************************/
+.videocontrolslabel
+{
+    width:85px; 
+	height:25px;
+	line-height:25px;
+	text-align:center;
+	float:left;
+}
+.videocontrols
+{
+    width:85px; 
+	height:25px;
+	line-height:25px;
+	float:left;
+}
+.schedulebtn
+{
+    width:515px;
+	text-align:right;
+	margin-bottom:5px;
+}
+.schedulecanvas
+{
+    width:520px;
+	height:285px;
+}
+.linkagetable
+{
+    width:515px;
+	border-collapse:collapse;
+}
+.linkagetitle
+{
+    height:25px;
+	background:#eaeaea;
+}
+.scheduleeditdiv
+{
+    width:600px; 
+	/*height:350px;*/ 
+	margin:0 auto; 
+	border:1px solid #8e8e8e; 
+	background:#e7e7e7;
+}
+.scheduleedittitlediv
+{
+    height:35px; 
+	background:#d8d8d8; 
+	line-height:35px; 
+	padding-left:10px;
+}
+.scheduletd
+{
+    padding-left:5px;
+	cursor:pointer;
+	border:1px solid #c2c2c2;
+}
+.scheduletdbackground
+{
+    background:url(../images/config/timeIcon.gif) no-repeat right center;
+}
+.boldfont
+{
+	font-size:13px;
+	font-weight:bold;
+    color: #383838;
+}
+.movefirstspan
+{
+	width:146px;
+	margin-left:10px;
+}
+/*************************************************
+                 事件子页面 end
+*************************************************/
+/*************************************************
+                 存储子页面 begin
+*************************************************/
+/************录像计划页面 begin************/
+.recordschedulebtn
+{
+    width:525px;
+	text-align:right;
+	margin:10px 0 5px 0;
+}
+.recordschedulecanvas
+{
+	width:675px;
+	height:285px;
+}
+/************录像计划页面 end************/
+/***********磁盘管理页面 begin***********/
+.storagelist
+{
+	border:1px solid #EBE8D9;
+	border-width:0 1px 1px 1px;
+	height:26px;
+}
+.storagerowfirst
+{
+	width:84px;
+	border-right:1px solid #EBE8D9;
+	height:21px;
+	padding-top:5px;
+	padding-left:4px;
+	float:left;	
+}
+.storagerowother
+{
+	width:85px;
+	border-right:1px solid #EBE8D9;
+	height:21px;
+	padding-top:5px;
+	padding-left:5px;
+	float:left;	
+}
+.storagerowlast
+{
+	width:128px;
+	height:21px;
+	padding-top:5px;
+	padding-left:5px;
+	float:left;
+	overflow:hidden;
+	white-space:nowrap;
+}
+.seldiskcheck
+{
+	margin-right:3px;
+	vertical-align:text-bottom;
+    cursor:pointer;
+}
+/***********磁盘管理页面 end**********/
+/**************NAS begin************/
+#nas div.enter
+{
+	background-color:#FBFBC2;
+	cursor:pointer;
+}
+.nasline
+{
+	height:24px;
+	line-height:24px;
+	text-align:left;
+	border:1px solid #ECE9DC;
+	border-width:0px 1px 1px 1px;
+}
+.nastwoline
+{
+	border:1px solid #ECE9DC;
+	border-width:0px 1px 1px 1px;
+	height:50px;
+	line-height:50px;
+	text-align:left;
+}
+.nasfirstspan
+{
+	max-width:120px;
+	text-align:center;
+	min-width:100px;
+}
+.nassecondspan
+{
+	max-width:100px;
+	text-align:center;
+	min-width:75px;
+}
+.select .nasline
+{
+	background-color:#3399FF;
+}
+.select .nastwoline
+{
+	background-color:#C4F0FF;
+}
+.nasrow
+{
+	padding-left:5px;
+	/*padding-top:3px;*/
+	height:24px;
+	border-right:1px solid #ECE9DC;
+	float:left;
+}
+.nasfoot
+{
+	height:30px;
+	line-height:30px;
+	border:none;
+}
+.nasrowfirst
+{
+	width:71px;
+}
+.nasrowsecond
+{
+	width:145px;
+}
+.nasrowthird
+{
+	width:195px;
+	overflow:hidden;
+}
+.nasrowfouth
+{
+	width:254px;
+	border-right:none;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.nasformtips 
+{
+	width:auto;
+    color:#457735;
+	border:none;
+}
+.nasedittext
+{
+	display:none;
+	position:absolute;
+}
+/**************NAS end************/
+/*************************************************
+                 存储子页面 end
+*************************************************/
+#scheduleplan .linkagetable tr
+{
+    height:25px;
+}
+#scheduleplan .linkagetable td
+{
+    padding-left:5px;
+	cursor:pointer;
+	border:1px solid #c2c2c2;
+}
+/**************AudioDetect Start************/
+#dvAudioDetect .waveShowBox
+{
+	width:400;
+	height:100px;
+	padding-top:10px;
+	position: relative;
+}
+/**************AudioDetect End************/
+/**************LineDetect Start************/
+.detectselect
+{
+	width:110px; 
+	font-size:12px;
+}
+
+.detectsilderwidth 
+{
+	width:80px; 
+	font-size:12px;
+}
+
+#dvLineDetect .clearlinebutton
+{
+    width:85px;
+	height:24px;
+	margin-left:12px;
+	line-height:20px; /*IE*/
+	vertical-align:middle;
+    cursor:pointer;
+}
+
+.detectboxBar
+{
+	margin:3px 0 0 85px;
+	height:14px; 
+	width:22px;
+	text-align:center;
+}
+
+.detectfirstspanEx
+{
+    display:inline-block;
+	width:85px;    
+}
+
+.detectsecondspanEx
+{
+    float:left;
+    padding-left:3px;
+}
+.detectthridspanEx
+{
+    padding-left:120px;
+}
+/**************LineDetect End************/
+/*************PeopleCount Start**************/
+.videocontrolsExtend
+{
+    width:200px;
+    height:25px;
+    line-height:25px;
+    float:left;
+}
+
+.buttonExtend
+{
+    width:150px;
+    height:24px;
+    margin-left:5px;
+    line-height:20px; /*IE*/
+    vertical-align:middle;
+    cursor:pointer;
+}
+
+.cahrttitlespan {
+    width: 130px;
+    display: inline-block;
+}
+
+.chartchoosespan {
+    width: 130px;
+    display: inline-block;
+    white-space: nowrap;
+}
+.countexportbtn {
+    float: right;
+    margin-right: 5px;
+}
+
+.countcfgright {
+    float:left;
+    width:318px;
+}
+.charthead {
+    width: 675px;
+    height: 30px;
+    line-height:30px;
+    margin-top: 20px;
+    border:1px solid #c2c2c2;
+    padding-left:10px;
+    background:#eaeaea;
+}
+.chartbody {
+    width: 685px;
+    height: 380px;
+    margin-top: 10px;
+    /*padding-left: 10px;*/
+    text-align: center;
+    border:1px solid #c2c2c2;
+}
+.chartArea {
+    width: 600px;
+    height: 380px;
+    margin-left: 30px;
+}
+
+.countTableTitle {
+    width: 685px;
+    height: 27px;
+}
+
+.countTableBody {
+    width: 685px;
+    height: 353px;
+    overflow: auto;
+}
+
+.charimg {
+    width: 685px;
+    height: 380px;
+}
+
+/*************PeopleCount Count**************/
+.msg-content-wrap {
+    position: relative;
+    top: 28%;
+    margin:0 auto;
+    width: 300px;
+    border:1px solid #959595;
+    background:#ffffff;
+    text-align:center;
+}
+.msg-content {
+    padding: 15px 10px 15px 10px;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+/*云台锁定*/
+.baseInlineHorizon {
+	vertical-align:top;
+	*vertical-align:super;
+}
+
+#basePTZlock {
+	height:26px;
+	overflow:hidden;
+	/*position:relative;*/
+	background:#eaeaea;
+    float: right;
+	display:none;
+}
+#basePTZlock iframe {
+	height:26px;
+	overflow:hidden;
+	width: 88px;
+	background-color:transparent;
+	background:#eaeaea;
+	padding-left: 40px;
+	border-left: 1px solid #8B8A8A;
+}
+/*配置能力不支持会掉字体*/
+.cfgdisablefont {
+    color: #ACA899;
+}
+/*鱼眼参数说明加粗*/
+.fishcontentTips {
+    font-weight:bold;
+}
+
+.fishfirstTips {
+    padding-left: 7px;
+    _display:inline-block;
+    _vertical-align:top;
+    font-weight:bold;
+}
+
+.nobreakline {
+    white-space: nowrap;
+}
+
+.detectspanfirst {
+    width:150px;
+    display:inline-block;
+}
+
+.detectverticaltop {
+    vertical-align:top;
+}
+
+.RightPTZLock
+{
+	float: right;
+	padding-right: 10px;
+}
+.RightPTZLock .PTZiFrame
+{
+	border:none !important;
+}
+
+.heatmaptip {
+    height:14px;
+    line-height:14px;
+    margin-top: 5px;
+    margin-bottom:2px;
+}
+
+.heatmapimg {
+    width:138px;
+    height:14px;
+}
+
+.heatmapplugin {
+    height:0px;
+    margin:0;
+}
+
+.countingplugin {
+    width:643px;
+    height:526px;
+    text-align:center;
+    display:table-cell;
+    vertical-align:middle;
+    background-color:#343434;
+}
+
+.countingcontrols {
+    width:120px;
+    height:25px;
+    line-height:25px;
+    margin-right: 10px;
+    float:left;
+}
+
+.countingcontrols.first {
+    margin-left: 47px;
+}
+
+.countingbutton {
+    width:120px;
+    height:24px;
+    margin-left:5px;
+    line-height:20px; /*IE*/
+    vertical-align:middle;
+    cursor:pointer;
+}
+.countingbutton::-moz-focus-inner
+{ /*Firefox*/
+    border:none;
+}
+
+.phoneTableTitle {
+    width: 690px;
+    height: 27px;
+}
+
+.phoneTableBody {
+    width: 690px;
+    /*height: 353px;*/
+    /*overflow: auto;*/
+}
+
+.FlodMainPage {
+    border-bottom:#D9D9D9 solid 1px;
+    padding-bottom:8px;
+}
+.phoneSubtitle {
+    height:26px;
+    line-height:26px;
+    padding-left:10px;
+    margin-bottom:2px;
+    /*background:#eaeaea;*/
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.userPermissionDesc
+{
+	margin-left: 5px;
+}
+
+.ChannelList
+{
+	margin: 5px;
+}
+
+/*DisplayParamSwitch*/
+.dpsfirstspan
+{
+	width:100px;
+	padding-left: 10px;
+	white-space:nowrap;
+}
+
+.timeselect
+{
+	width: 95px;
+}
+
+.publicsecurity
+{
+	display: none;
+}
+
+.overlayfirst
+{
+	width: 20px;
+}
+
+.overlaysecond
+{
+	width: 60px;
+}
+
+.roadinfo
+{
+	margin-top: 10px;
+	padding-left: 10px;
+	width: 100%;
+	height:179px; 
+}
+
+.roadimage
+{
+	position: relative;
+	width: 318px;
+	height:179px;
+	background:url(../images/config/road.png) no-repeat;
+	display: inline-block;
+}
+
+.roadmark
+{
+	position: absolute;
+	text-align: center;
+	font-size: 23px;
+}
+
+.roadmark.select
+{
+	color: red;
+}
+
+
+.roadmark1
+{
+	left: 0;
+	top: 15px;	
+	width: 100%;
+	color: #fff;
+}
+
+.roadmark2
+{
+	right: 12px;
+	top: 97px;
+	color: #fff;
+}
+
+.roadmark3
+{
+	left: 12px;
+	top: 97px;
+	color: #fff;
+}
+
+.roadmark4
+{
+	left: 147px;
+	top: 97px;
+	color: #2C57AF;
+}
+
+.roadmark5
+{
+	left: 215px;
+	top: 97px;
+	color: #2C57AF;
+}
+
+.roadmark6
+{
+	left: 85px;
+	top: 97px;
+	color: #2C57AF;
+}
+
+.roadtexts
+{
+	position: relative;
+	margin-left: 20px;
+	width: 230px;
+	height:179px;
+	display: inline-block;
+}
+
+.roadtexts .firstspan
+{
+	width: 20px;
+}
+
+.roadtexts .secondspan
+{
+	width: 20px;
+}
+
+.roadtext
+{
+	height: 30px;
+	line-height: 30px;
+}
+/*变音*/
+.volumetext {
+	width: 54px;
+	height: 26px;
+	line-height: 26px;
+	font-weight: bold;
+}

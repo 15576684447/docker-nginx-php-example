@@ -1,0 +1,68 @@
+<!doctype html>
+<!--[if lt IE 7 ]><html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]><html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en" class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title></title>
+
+    <!-- main JS libs -->
+    <script src="js/libs/modernizr.min.js"></script>
+    <script src="js/libs/jquery-1.11.3.min.js"></script>
+    <script src="js/libs/jquery-ui.1.11.4.min.js"></script>
+    <script src="js/libs/bootstrap.min.js"></script>
+
+    <!-- Style CSS -->
+    <link href="css/bootstrap.css" media="screen" rel="stylesheet">
+    <link href="style.css" media="screen" rel="stylesheet">
+
+    <!-- scripts -->
+    <script src="js/general.js"></script>
+
+    <!-- Include all needed stylesheets and scripts here -->
+    <script src="js/ajaxfunc.js"></script>
+    <script src="js/common.js"></script>
+    <!--[if lt IE 9]><script src="js/respond.min.js"></script><![endif]-->
+    <!--[if gte IE 9]>
+    <style type="text/css">
+        .gradient {filter: none !important;}
+    </style>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="body_wrap">
+      <div class="container" style="margin-top:30px">
+        <select class="select_styled" id="tb_pos_id">
+          <option style="background-color: #444c55;font-size: 20px;" value="1">左上</option>
+          <option style="background-color: #444c55;font-size: 20px;" value="2">左下</option>
+          <option style="background-color: #444c55;font-size: 20px;" value="3">右上</option>
+          <option style="background-color: #444c55;font-size: 20px;" value="4">右下</option>
+        </select>
+        <div class="form-row">
+          <div class="form-item"><input type="text" id="gate0"></div>
+          <div class="form-label">网关：</div>
+        </div>
+
+        <span class="btn btn-acute vh-ajust3"><input type="button" value="自动控制" id="autobtn" onclick="autobtnClick()"></span>
+      </div>
+        <div class="vol_bar" id="volume"></div>
+      <!--/ container -->
+    </div>
+    <script>
+      $("#tb_pos_id").val("2");
+      $("#volume").slider({
+        min: 0,
+        max: 100,
+        value: 0,
+        range: "min",
+        animate: true
+      });
+    </script>
+  </body>
+</html>

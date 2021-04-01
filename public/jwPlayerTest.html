@@ -1,0 +1,111 @@
+<!doctype html>
+<!--[if lt IE 7 ]><html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]><html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<!-- main JS libs -->
+<script src="js/libs/modernizr.min.js"></script>
+<script src="js/libs/jquery-1.11.3.min.js"></script>
+<script src="js/libs/jquery-ui.1.11.4.min.js"></script>
+<script src="js/libs/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="player/jwplayer.js"></script>
+<!--[if lt IE 9]>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+<!--[if gte IE 9]>
+<style type="text/css">.gradient {filter: none !important;}</style>
+<![endif]-->
+</head>
+
+<body>
+<div id="container"></div>  
+<input type="button" class="player-play" value="播放" />  
+<input type="button" class="player-stop" value="停止" />  
+<input type="button" class="player-status" value="取得状态" />  
+<input type="button" class="player-current" value="当前播放秒数" />  
+<input type="button" class="player-goto" value="转到第30秒播放" />  
+<input type="button" class="player-length" value="视频时长(秒)" />  
+
+<script type="text/javascript">  
+    var thePlayer;  //保存当前播放器以便操作  
+    $(function() {  
+        thePlayer = jwplayer('container').setup({  
+            flashplayer: 'player/player.swf',  
+            //file: 'player/test.mp4',  
+			//file: 'rtmp://live.hkstv.hk.lxdns.com/live/hks', 
+			//streamer:'rtmp://192.168.1.77/test/livestream',
+			//一定要两个一起写才可以播放
+			streamer:'rtmp://live.hkstv.hk.lxdns.com/live/',
+			file:'hks',
+			
+			
+			//streamer:'rtmp://192.168.1.77/test/',
+			//file:'livestream',
+            width: 500,  
+            height: 350,  
+            dock: false  
+        });  
+          
+        //播放 暂停  
+        $('.player-play').click(function() {  
+            if (thePlayer.getState() != 'PLAYING') {  
+                thePlayer.play(true);  
+                this.value = '暂停';  
+            } else {  
+                thePlayer.play(false);  
+                this.value = '播放';  
+            }  
+        });  
+          
+        //停止  
+        $('.player-stop').click(function() { thePlayer.stop(); });  
+          
+        //获取状态  
+        $('.player-status').click(function() {  
+            var state = thePlayer.getState();  
+            var msg;  
+            switch (state) {  
+                case 'BUFFERING':  
+                    msg = '加载中';  
+                    break;  
+                case 'PLAYING':  
+                    msg = '正在播放';  
+                    break;  
+                case 'PAUSED':  
+                    msg = '暂停';  
+                    break;  
+                case 'IDLE':  
+                    msg = '停止';  
+                    break;  
+            }  
+            alert(msg);  
+        });  
+          
+        //获取播放进度  
+        $('.player-current').click(function() { alert(thePlayer.getPosition()); });  
+  
+        //跳转到指定位置播放  
+        $('.player-goto').click(function() {  
+            if (thePlayer.getState() != 'PLAYING') {    //若当前未播放，先启动播放器  
+                thePlayer.play();  
+            }  
+            thePlayer.seek(30); //从指定位置开始播放(单位：秒)  
+        });  
+          
+        //获取视频长度  
+        $('.player-length').click(function() { alert(thePlayer.getDuration()); });  
+    });  
+</script>  
+
+</body>
+
+
+</html>

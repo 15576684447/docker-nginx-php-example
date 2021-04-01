@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+/*大容器样式*/
+.AudioContainer {
+    height: 100px;
+    width: 400px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+    /*background: #0000ff;*/
+}
+/*动画展现样式*/
+.AudioShowBox {
+	width: 400px;
+	height: 100px;
+    top: 0;
+    left: 0;
+    border: 0;
+    padding: 0;
+    margin: 0;
+	float: left;
+	position: relative;
+    overflow: hidden;
+	background: #686E7A;
+}
+
+/*刻度框样式*/
+.graduationMark {
+    height: 50px;
+    width: 40px;
+    top: 0px;
+    left: 400px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+	text-align: center;
+	font-size: 14px;
+	color: red;
+    position: relative;
+    background: yellow;
+}
+
+/*要插入的div样式*/
+.innerWaveDiv {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    font-size: 0; /*IE6会默认预留空间导致高度不对*/
+	background: #000000;
+}
+
+/*标准线*/
+.JudgeLine {
+    height: 1px;
+    width: 400px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+	overflow: hidden; /*IE6会默认粗1px*/
+	/*line-height: 0;
+    font-size: 0; IE6会默认预留空间导致高度不对*/
+	position: relative;
+    background: #FF0000;
+}
+

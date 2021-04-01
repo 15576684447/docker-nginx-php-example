@@ -1,0 +1,16 @@
+<?php
+function SendSocketMsg($msg)
+{
+	$sock = @socket_create(AF_INET,SOCK_DGRAM,0);
+	if (!$sock) {
+	    die("$errstr ($errno)");
+	}
+	
+	$buf=$msg.md5($msg,TRUE);
+	if(!@socket_sendto($sock,$buf,strlen($buf),0,"127.0.0.1",36210)){
+	     socket_close($sock);
+	     exit();
+	}
+	socket_close($sock);
+}
+?>

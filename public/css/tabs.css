@@ -1,0 +1,83 @@
+.tabs {
+	margin:0; 
+	padding:0;
+    height: auto;
+    display: inline-block;
+	/*height:26px;*/
+	/*height:25px !important;
+	border-bottom:1px solid #C2C2C2;*/
+}
+
+/* single tab */
+.tabs li {
+	height:26px;
+	height:27px !important;
+	float:left;	 
+	padding:0; 
+	margin:0;
+	list-style-type:none;
+	margin-right:2px;
+	border:1px solid #C2C2C2;
+	/*border-bottom:1px solid #C2C2C2;*/
+    border-width:1px 1px 0px 1px;
+}
+
+.tabs .hideBorder {
+    margin: 0px;
+	border:none;
+}
+
+/* link inside the tab. uses a background image */
+.tabs a { 
+	float:left;
+	display:block;
+	padding:5px 7px;
+	text-decoration:none;
+	
+	/*border-left:none;*/
+	background-color:#EEEEEE;
+	color:#383838;
+		
+	position:relative;
+	top:1px;
+	/*cxz*/
+	blr:expression(this.onFocus=this.blur());	
+	outline:none;
+	white-space:nowrap;
+	/*-moz-border-radius:4px 4px 0 0;
+	-webkit-border-radius:4px 4px 0 0;*/
+	
+	/*outline:none;*/
+}
+
+.tabs a:hover {
+	background-color:#F7F7F7;
+	color:#333;
+}
+	
+/* selected tab */
+.tabs a.current {
+    z-index: 1; /*比subpage高即可*/
+	background-color:#FFFFFF;
+	border-bottom:1px solid #FFFFFF;
+    padding-bottom: 7px;
+	cursor:default;
+}
+
+.tabs a.current:hover {
+	background-color:#FFFFFF;
+}
+
+.panes {
+    margin-top: -4px;
+	border:1px solid #C2C2C2;
+    /*border-top: 1px solid #C2C2C2;
+	border-width:1px 1px 1px 1px;*/
+	padding:26px 20px 26px 20px;
+	background-color:#FFFFFF;
+}
+	
+/* tab pane */
+.pane {
+	display:none;
+}

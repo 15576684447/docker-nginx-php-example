@@ -1,0 +1,500 @@
+/*   
+Theme Name: Beautiful Shades of Gray
+Theme URI: http://www.csstemplateheaven.com
+Description: A beautiful theme with lots of nice details. For blog, business or magazine sites.
+Author: Dieter Schneider
+Author URI: http://www.dieter.no
+Version: 1.0
+*/
+
+@import url('style_browser_reset.css');
+/*================================================================
+Typography and links
+==================================================================*/
+* {margin:0;padding:0;}
+
+.left {float:left;}
+.right {float:right;}
+.clear {clear:both;}
+.paddingleft5 {padding-left:5px;}
+.paddingleft10 {padding-left:10px;}
+.marginleft10 {margin-left:10px;}
+.marginleft20 {margin-left:20px;}
+.marginright10 {margin-right:10px;}
+.margintop10 {margin-top:10px;}
+.inputwidth {width:196px; font-size:12px;}
+.selectwidth {width:200px; font-size:12px;}
+.mousepointer {cursor:pointer;}
+.pluginLink {color: #FFFFFF;font-size:16px;text-decoration:underline;cursor:pointer;display:inline-block;width:555px;word-wrap:break-word;}
+.pluginLinkSel {color: #0FFFFF;font-size:16px;text-decoration:underline;cursor:pointer;display:inline-block;width:555px;word-wrap:break-word;}
+.widthpercent100 {width:100%;}
+.displaynone {display:none;}
+.plugin0 {height:0px;margin:25px 0 0 10px;}
+.fontnormal {font-size:12px;font-family:Arial, Helvetica, sans-serif;-webkit-text-size-adjust:none;}
+.bordercollapse {border-collapse:collapse;}
+.textalignright {text-align:right;}
+.textOverLengthHide{overflow:hidden;text-overflow:ellipsis;white-space:nowrap; vertical-align:top;}
+.showVerticalMiddle {vertical-align: middle;}
+/*弹出框样式 begin*/
+#simplemodal-overlay {filter:Alpha(opacity=30);background-color:#D2D2D2; cursor:auto; width:800px;}
+#simplemodal-container {width:820px; height:538px; overflow:auto;}
+/*弹出框样式 end*/
+.appLogo_img {background:url(../images/login/logo.gif) no-repeat;}
+
+a:link, a:visited {
+	color: #999999;
+	text-decoration: none;
+}
+
+h1 a:link, h1 a:visited, h2 a:link, h2 a:visited, .sidebar_nav a {
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 1em;
+	font-weight: bold;
+	letter-spacing: .16em;
+}
+
+.featured h2 {
+	font-size: 1.8em;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.post_header h2 {font-size: 1.2em; font-weight: normal; margin-top: 10px;}
+
+.post_header_page h1{
+	font-size: 2em;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+#footer h3 {margin-bottom: 25px; border-bottom: 1px dotted gray; padding: 5px;}
+
+.featured p {
+	font-size: .8em;
+	font-style: italic;
+}
+
+p {
+	margin: 15px 0px;
+	line-height: 1.6em
+}
+
+.post_body_page p{margin: 0; padding: 15px 0px;}
+
+small {
+	font-size: 0.8em;
+	font-style: italic;
+}
+
+strong {font-weight: bold;}
+
+.post_body p {
+	font-size: 1em;
+    margin: 10px 0px;
+}
+
+.more {
+	margin-top: 10px;
+	margin-right: -10px;
+	float: right;
+}
+
+.more_big {
+	margin-top: -20px;
+	margin-right: 20px;
+	float: right;
+	width: 139px;
+	height: 73px;
+}
+
+.footer_comments {
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.comment_count {
+	font-weight: bold;
+	font-size: 1.8em;
+}
+
+.featured_datetime {margin: 6px 0px}
+
+.featured_more {
+	float: right;
+	font-weight: bold;
+	margin-right: 20px;
+	text-decoration: underline;
+}
+
+.post_body_page ol{
+	list-style-type: upper-roman;
+	margin: 30px 0px;
+}
+
+.post_body_page ol li{
+	list-style-type: upper-roman;
+	margin-left: 60px;
+}
+
+.post_body_page ul{
+	list-style-type: upper-roman;
+	margin: 30px 0px;
+}
+
+.post_body_page ul li{
+	list-style-type: disc;
+	margin-left: 60px;
+}
+
+blockquote {
+	margin: 0px 30px;
+	padding: 20px;
+	border: 1px dotted gray;
+	font-style: italic;
+}
+
+/*================================================================
+Site Structure
+==================================================================*/	
+
+body {
+	font-size:100%;
+	line-height:1.125em;
+	font-family:Arial, Helvetica, sans-serif; -webkit-text-size-adjust: none;
+	/*background-color: #f0f0f0;
+	background-image: url(../images/body.jpg);
+	background-repeat: repeat-x;*/
+	color: #7C7C7C;
+}
+
+#page_wrapper {	
+    width: 976px;
+	margin: 0px auto;
+	position: relative;
+}
+
+#featured {
+	height: 230px;
+	margin-right: 3px;
+	margin-bottom: 30px;
+	border: 0px solid red;
+	padding: 15px;
+	background-image: url(../images/featured.jpg);
+	background-repeat: no-repeat;
+}
+
+#container {	
+    width: 974px;
+	margin: 5px auto;
+	font-size:0.875em;
+	border:1px solid #b1b1b1;
+	height:655px;
+}
+
+#main_content_left_index {
+	width: 640px;
+	float: left;
+}
+
+#main_content_left {
+	width: 640px;
+	float: left;
+}
+
+#main_content_right {
+	width: 253px;
+	float: right;
+}
+
+
+/*================================================================
+The columns
+==================================================================*/
+
+#first_column {
+	float: left;
+	width: 280px;
+}
+
+#second_column {
+	float: right;
+	width: 280px;
+}
+
+/*================================================================
+The posts
+==================================================================*/
+
+.posts {
+	background-image: url(../images/posts.jpg);
+	height: 333px;
+	width: 275px;
+	margin-bottom: 60px;
+}
+
+.post_header {
+	height: 38px;
+	width: 255px;
+	padding: 10px;
+	border: 0px solid red;
+}
+
+.post_body {
+	width: 255px;
+	height: 180px;
+	padding: 10px;
+	overflow: hidden;
+	font-size: .9em;
+}
+
+
+
+
+.post_header_single {
+	background-image: url(../images/black.jpg);
+	padding: 0px;
+	width: 640px;
+	height: 360px;
+	text-align: center;
+}
+
+.post_body_page{
+	background-image: url(../images/PostBodyPage.jpg);
+	background-repeat: repeat-y;
+	width: 547px;
+	padding: 0px 25px;
+}
+
+
+/*================================================================
+Top navigation
+==================================================================*/
+
+#top_nav_menu {
+	position: absolute;
+	top: 132px;
+	left: 0;
+	width: 950px;
+}
+
+/***** drop menu *****/
+
+
+/*================================================================
+Categories Navigation
+==================================================================*/
+
+#main_categories {
+	margin: auto;
+	height: 20px;
+	width: 976px;
+	margin-bottom: 30px;
+}
+
+/* Horizontal Category List (frontpage) */
+
+ul.horizontal_categories {
+    clear: both;
+}
+
+.horizontal_categories li {
+	display: inline;
+	background: url(../images/cat_bullet.png) no-repeat right center;
+	font-size: 1.2em;
+	font-weight: bold;
+	letter-spacing: .08em;
+}
+
+.horizontal_categories a {
+    padding: 0px 25px;
+}
+
+.horizontal_categories a:link, .horizontal_categories a:visited {
+
+}
+
+.horizontal_categories a:hover {
+ 
+}
+
+
+
+/*================================================================
+Nested Comments
+==================================================================*/
+
+
+#author, #email, #url {
+	background-color: #FBFBFB;
+}
+
+.submit_button {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: bold;
+	background-image: url(../images/submit.jpg);
+	height: 32px;
+	width: 165px;
+	cursor: pointer;
+	border: 0;
+}
+
+.post_footer_comment {
+	background-image: url(../images/post_footer_comment.jpg);
+	height: 138px;
+	width: 597px;
+}
+
+/*================================================================
+Image floats for posts
+==================================================================*/
+
+img.centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+img.alignright {
+	padding: 2px;
+	margin: 0 0 2px 7px;
+	display: inline;
+	border: 1px solid gray
+	}
+
+img.alignleft {
+	padding: 2px;
+	margin: 0 7px 2px 0;
+	display: inline;
+	border: 1px solid gray
+	}
+
+.alignright {
+	float: right;
+	}
+
+.alignleft, .post_thumb, .featured_thumb {
+	float: left
+	}
+	
+.post_thumb {margin: 15px 7px 2px 0px; padding: 2px; border: 1px solid gray}
+
+.featured_thumb {margin: 0px 15px 4px 0px; padding: 2px; border: 1px solid gray}
+
+/*================================================================
+Tabs
+==================================================================*/
+/*父容器定位必须设置为relative，子元素的定位才会根据父容器的窗口左上角来定位*/
+.widget_box {
+	display: block;
+	float: left;
+	margin:0 0 0px 0;
+	width: 340px;
+	padding-top: 20px;
+	padding-bottom: 15px;
+	border-bottom: 0px solid #dcdcdc;
+	background: url(../images/usual_bg.jpg) no-repeat;
+        position: relative;
+}
+
+.usual {
+	width: 340px;
+}
+
+.usual ul{
+}
+
+.usual ul li{
+font-size: 12px;
+float:left;
+padding:0px 0px 0 0;
+text-align:center;
+
+}
+.usual ul li a {
+	text-decoration:none;
+	color:#000;
+	border:none;
+	display:block;
+	padding:6px;
+	width: 73px;
+	letter-spacing:1px;
+	background-image: url(../images/tab_a.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.usual ul li a:hover {
+	color:#2D170A;
+	background-image: url(../images/tab_a_hover.jpg);
+}
+
+.usual ul li a.selected {
+	margin-bottom:0;
+	color:#000;
+	cursor:default;
+	background-image: url(../images/tab_a_active.jpg);
+}
+
+.zoom
+{
+font-size: 12px;
+text-align:center;
+text-decoration:none;
+color:#000;
+border:none;
+display:block;
+padding:6px;
+width: 73px;
+letter-spacing:1px;
+position:absolute; left: 10px;top:0px;
+}
+
+.focus
+{
+font-size: 12px;
+text-align:center;
+text-decoration:none;
+color:#000;
+border:none;
+display:block;
+padding:6px;
+width: 73px;
+letter-spacing:1px;
+position:absolute; left: 10px;top:0px; 
+}
+
+.iris
+{
+font-size: 12px;
+text-align:center;
+text-decoration:none;
+color:#000;
+border:none;
+display:block;
+padding:6px;
+width: 73px;
+letter-spacing:1px;
+position:absolute; left: 10px;top:0px;
+}
+
+.zoom_in{background:url(../images/zoom_in.png) 0 0 no-repeat; width:32px; height:32px;  position:absolute; left: 10px;top:10px;}
+.zoom_out{background:url(../images/zoom_out.png) 0 0 no-repeat; width:32px; height:32px;  position:absolute; left: 100px;top:10px;}
+
+.focus_a{background:url(../images/focus_a.png) 0 0 no-repeat; width:32px; height:32px;  position:absolute; left: 10px;top:64px;}
+.focus_b{background:url(../images/focus_b.png) 0 0 no-repeat; width:32px; height:32px;  position:absolute; left: 100px;top:64px;}
+
+.iris_a{background:url(../images/iris_a.png) 0 0 no-repeat; width:32px; height:32px;  position:absolute; left: 10px;top:128px;}
+.iris_b{background:url(../images/iris_b.png) 0 0 no-repeat; width:32px; height:32px;  position:absolute; left: 100px;top:128px;}
+
+
+#usual2 { background:#0A0A0A; }
+#usual2 a { background:#222; }
+#usual2 a:hover { background:#000; }
+#usual2 a.selected { background:white; }
+#tabs3 { background:#FF9; }
+
+
